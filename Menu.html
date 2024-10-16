@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <img class="concord-img vlv-creative"  src="Images/dosa.jpg" srcset="images/dosa.jpg 1000w"  alt=""> -->
+    <link rel="stylesheet" href="style.css">
+    <h1>Rakshithaa Restaurent -Fresh and Finest Taste</h1>
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Menu.html">Menu</a> <br><!--This Means Search Menu.html in same folder and display that page..-->
+    <a href="https://www.swiggy.com/">Order Online</a> <br>
+    <!-- This will take you to same page id#dessert items...-->
+    <a href="#dessert">Check your dessert</a>
+    <h2>Starters</h2>
+    <ol>
+        <li>Samosa Rs.20</li>
+        <li>Veg Roll Rs.30</li>
+        <li>Vada Rs.15</li>
+    </ol>
+    <h2>Main Menu</h2>
+    <ol>
+        <li>Dosa Rs.25</li>
+        <li>Poori Rs.30</li>
+        <li>Pongal Rs.40</li>
+    </ol>
+<!--ID can recall from other pages-->
+<h2 id="dessert">Dessert</h2>
+    <ol>
+        <li>Gulab Jamun Rs.60</li>
+        <li>Basundin Rs.50</li>
+        <li>Mango Lassi Rs.55</li>
+    </ol>
+
+<!--Tables in HTML-->
+<!--tables come with Row{<tr>}, column{<td>} <th> means table headings-->
+    <!--<tbody> means Table body-->
+<!--cellpadding means inside the cell space-->
+<!--cellspacing means between two cell's space -->
+<div class="menutable">
+    <table border="5" cellpadding="10" cellspacing="10" > <!-- border for cells border-->
+    <thead id="menu">
+        <td colspan="3" >Menu</td><!--colum span-->
+         <tr>           
+            <th></th>
+            <th>Items</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    
+   <tbody>
+    <tr>
+        <td rowspan="3" id="span">Starters</td> <!--Row span-->
+        <td >Samosa</td>
+        <td>Rs.20</td>
+        
+    </tr>
+    <tr>
+        <td>Veg Roll</td>
+        <td>Rs.30</td>
+    </tr>
+    <tr>
+        <td>Vada</td>
+        <td>Rs.15</td>
+    </tr>
+    <tr>
+        <td rowspan="3" id="span">Main Menu</td>
+        <td>Dosa</td>
+        <td>Rs.25</td>
+    </tr>
+    <tr>
+        <td>Poori</td>
+        <td>Rs.30</td>
+    </tr>
+    <tr>
+        <td>Pongal</td>
+        <td>Rs.40</td>
+    </tr>
+    <tr>
+        <td rowspan="3" id="span">Dessert</td>
+        <td>Gulab Jamun</td>
+        <td>Rs.60</td>
+    </tr>
+    <tr>
+        <td>Basundin</td>
+        <td>Rs.50</td>
+    </tr>
+    <tr>
+        <td>Mango Lassi</td>
+        <td>Rs.55</td>
+    </tr>
+
+   </tbody>
+</table>  </div>
+<fieldset>
+<!-- Forms in HTML-- If we want to take any details from user we have to use this -->
+<!--method="post" use for to post to server.. method="get" use for to get the details.-->
+<form action="Submit.html" method="get">
+    <table>
+       <tr> 
+        
+    <div> <!-- to make group of TAGS-->
+        <td><label for="UserName">UserName</label></td>
+        <td><input type="text" name="Username" id="UserName"  placeholder="Username" required maxlength="10"></td>
+    </div>
+        
+    </tr>
+    <tr> 
+        
+        <div>
+            <td><label for="Password">Password</label></td>
+            <td><input type="password" name="Password" id="Password" placeholder="Password" required minlength="7"></td>
+        </div>
+         
+    </tr>
+    <tr>
+        
+        <div> <!-- to make group of TAGS-->
+            <td><label for="UserName">UserName</label></td>
+            <td><input type="email" name="Email" id="Email"  value="Email" required></td>
+        </div>
+        
+    </tr>
+    <tr>    
+        <div>
+            <td><label for="mobile no">Mobile No</label></td>
+            <td><input type="tel" name="mobile no" id="mobile no" placeholder="Mobile No"></td>
+        </div>       
+    </tr>
+    <tr>       
+        <div>
+            <td><label for="year of birth">Year of birth</label></td>
+            <td><input type="number" name="year of birth" id="year of birth" maxlength="4" min="2000" max="2020"></td>
+        </div>       
+    </tr>
+    <tr>
+        <div>
+            <td><label for="date of birth">Date Of Birth</label></td>
+            <td><input type="date" name="date of birth" id="date of birth" min="1985-05-01" max="2023-11-30"></td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><label for="url">URL</label></td>
+            <td><input type="url" name="url" id="url" placeholder="Enter the url"></td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><label for="search">Search</label></td>
+            <td><input type="search"></td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><label for="text area">Comments Here</label></td>
+            <td><textarea name="text area" id="text area" cols="25" rows="5" placeholder="Please Comment here"></textarea></td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><label for="SMS Alert">SMS Alert</label></td>
+            <td><input type="checkbox" name="SMS Alert" id="SMS Alert"></td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><label for="Email Alert">Email Alert</label></td>
+            <td><input type="checkbox" name="Email Alert" id="Email Alert"></td>
+        </div>
+    </tr>
+    
+    <tr>
+        <div>
+            <td><label for="">Gender</label></td>
+        
+            <td>
+                <label for="Gender">Male</label>
+                <input type="radio" name="Gender" id="Male" value="Male">
+                <label for="Gender">Female</label>
+                <input type="radio" name="Gender" id="Female" value="Female">
+            </td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><label for="Language">Please select Language</label></td>
+            <td>
+                <select name="Language" id="Language">
+                    <option value="Tamil">Tamil</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Kannada">Kannada</option>
+                </select>
+            </td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><label for="Language">Please select Multiple Language</label></td>
+            <td>
+                <select name="Language" id="Language" multiple>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Kannada">Kannada</option>
+                </select>
+            </td>
+        </div>
+    </tr>
+    
+    <tr>
+        <tr></tr>
+        <div>
+            <td></td><td><input type="submit" title="SignUp">  
+            <input type="reset"></td>
+        </div>
+    </tr>
+    
+</table>
+<tr>
+    <div>
+        <td>
+            <input type="checkbox" name="terms" id="terms" required>
+            <label for="terms">I agree for terms and conditions.</label>
+        </td>
+    </div>
+</tr>
+</fieldset> 
+
+    
+    
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.menutable {
+    color: blue;
+    font-style: italic;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+#menu{
+    background-color: rgb(232, 224, 240);
+}
+#span{
+    color: blueviolet;
+    font-size: large;
+}
+#checkbox{
+    color: blueviolet;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    color: brown;
+}
+.head3{
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
